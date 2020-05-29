@@ -1,0 +1,56 @@
+/*
+What is database design?
+. Determines how data is logically stored
+	- How is data going to be read and updated?
+. Uses database models: high-lebel sepcifications for database structure
+	- Most popular: relational model
+	- Some other options: NoSQL models, object-oriented model, network model
+. Uses schemas: blueprint of the database
+	- Defines tables, fields, relationships, indexes, and views
+	- When inserting data in relatinal databases, schemas must be respected
+
+Data Modeling
+Process of creating a data model for the data to be stored
+1. Conceptual data model: describes entities, relationships, and attributes
+	. Tools: data structure diagrams, e.g., entity-relational diagrams and UML diagrams
+2. Logical data model: defines tables, columns, relationships
+	. Tools: database models and schemas, e.g., relational model and star schema
+3. Physical data model: describes physical storage
+	. Tools: partitions, CPUs, indexes, backup systems and tablespaces
+
+
+Beyond the relational model
+Dimensional modeling
+Adaptation of the relational model for data warehoues design
+	. Optimized for OLAP queries: aggregate data, not updating(OLTP)
+	. Built using the star schema
+	. Easy to interpret and extend schema
+
+
+Elements of dimensional modeling
+Fact table:
+	- Decided by business use-case
+	- Holds records of a metric
+	- Changes regularly
+	- Connects to dimensions via foreign keys
+
+Demension tables
+	- Holds descritpions of attributes
+	- Does not changes as often
+	
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

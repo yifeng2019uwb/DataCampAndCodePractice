@@ -1,0 +1,21 @@
+/*
+Recommend a storage solution
+When should you choose a data warehouse over a data lake?
+
+To create accessible and isolated data repositories for other analysts
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

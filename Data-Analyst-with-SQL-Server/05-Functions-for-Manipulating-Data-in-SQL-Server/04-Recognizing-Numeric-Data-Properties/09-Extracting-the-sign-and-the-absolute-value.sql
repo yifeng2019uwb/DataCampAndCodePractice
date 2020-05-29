@@ -1,0 +1,52 @@
+/*
+Extracting the sign and the absolute value
+In some situations, you may need to use mathematical functions in your database development. After complex calculations, you may need to check the sign of an expression or its absolute value. The functions provided by SQL Server for these tasks are:
+
+ABS(expression)
+SIGN(expression)
+In this exercise, you will work with the following variables:
+
+DECLARE @number1 DECIMAL(18,2) = -5.4;
+DECLARE @number2 DECIMAL(18,2) = 7.89;
+DECLARE @number3 DECIMAL(18,2) = 13.2;
+DECLARE @number4 DECIMAL(18,2) = 0.003;
+The @result variable stores the result of the following calculation: @number1 * @number2 - @number3 - @number4.
+
+You will calculate the absolute value and the sign of this expression.
+*/
+
+
+/*
+Calculate the absolute value of the result of the expression.
+*/
+DECLARE @number1 DECIMAL(18,2) = -5.4;
+DECLARE @number2 DECIMAL(18,2) = 7.89;
+DECLARE @number3 DECIMAL(18,2) = 13.2;
+DECLARE @number4 DECIMAL(18,2) = 0.003;
+
+DECLARE @result DECIMAL(18,2) = @number1 * @number2 - @number3 - @number4;
+SELECT 
+	@result AS result,
+    -- Show the absolute value of the result
+	ABS(@result) AS abs_result;
+
+
+
+/*
+Find out the sign of the result (positive or negative).
+*/
+DECLARE @number1 DECIMAL(18,2) = -5.4;
+DECLARE @number2 DECIMAL(18,2) = 7.89;
+DECLARE @number3 DECIMAL(18,2) = 13.2;
+DECLARE @number4 DECIMAL(18,2) = 0.003;
+
+DECLARE @result DECIMAL(18,2) = @number1 * @number2 - @number3 - @number4;
+SELECT 
+	@result AS result,
+	-- Show the absolute value of the result
+	ABS(@result) AS abs_result,
+	-- Find the sign of the result
+	SIGN(@result) AS sign_result;
+	
+
+

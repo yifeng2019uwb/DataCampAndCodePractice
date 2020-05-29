@@ -1,0 +1,21 @@
+/*
+Using CASE statements
+In this exercise, you will use a CASE statement to create a new column which specifies whether the Country is USA or International.
+
+*/
+
+/*
+Create a new column, SourceCountry, defined from these cases:
+When Country is 'us' then it takes the value 'USA'.
+Otherwise it takes the value 'International'.
+*/
+SELECT Country, 
+       CASE WHEN Country = 'us'  THEN 'USA'
+       ELSE 'International'
+       END AS SourceCountry
+FROM Incidents
+
+
+
+
+
