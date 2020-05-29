@@ -1,4 +1,4 @@
 DATA CAMP
 
-DataCamp data-science courses(PART OF COURSES) I have completed.
+DataCamp data-science courses and projects(PART OF COURSES) I have completed.
 
